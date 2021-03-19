@@ -116,7 +116,7 @@ export const ServicesContainer = styled.div `
     }
 
     @media screen and (max-width: 480px) {
-        height: 2000px;
+        height: 2200px;
         padding-bottom: 0px;
         padding-top: 0px;
     }
@@ -124,8 +124,8 @@ export const ServicesContainer = styled.div `
 
 export const ServicesWrapper = styled.div `
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
+    // padding-left: 25px;
+    // padding-right: 25px;
    
     
     
@@ -147,8 +147,8 @@ height: 370px;
 width: 340px;
 padding: 50px;
 margin-top: 50px;
-margin-right: 25px;
-margin-left: 25px;
+// margin-right: 25px;
+// margin-left: 25px;
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 transition: all 0.2s ease-in-out;
 
@@ -158,7 +158,7 @@ transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
     @media screen and (max-width: 768px) {
-      height: 600px;
+      height: 650px;
       width: 350px;
       margin-top: 20px;
       background-color: #30204E;
@@ -180,7 +180,7 @@ export const ServicesH1 = styled.h1 `
 
     @media screen and (max-width: 768px) {
         font-size: 28px;
-        margin-top: 50px;
+        margin-top: 80px;
         
     }
 `
@@ -204,9 +204,11 @@ font-size: 14px;
 color: #28183B;
 
 @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 22px;
     color: #E2CDFF;
     padding-top: 40px;
+    line-height: 0;
+    margin-bottom: 40px;
     
 
 `
@@ -215,8 +217,10 @@ color: #28183B;
 
 export const ServicesP = styled.p`
 color: #E2CDFF;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 `;
 
 export const HeroBg = styled.div `

@@ -18,7 +18,8 @@ const HeroSection = () => {
                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </HeroBg> */}
             <HeroContent>
-                <HeroH1>Clarifying Cannabis</HeroH1><HeroP>
+                <HeroH1>Clarifying Cannabis</HeroH1>
+                <HeroP>
                 Delivering Transparency for Cannabis Consumers
                 </HeroP>
                 <HeroP2>
