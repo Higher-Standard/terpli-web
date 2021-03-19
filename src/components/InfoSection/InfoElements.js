@@ -6,7 +6,7 @@ export const InfoContainer = styled.div`
     ;
     @media screen and (max-width: 768px) {
         padding: 100px 0;
-            height: 1300px;
+            height: 1100px;
             padding-top: 50px;
         }
     }
@@ -68,10 +68,7 @@ export const TopLine = styled.p `
     margin-bottom: 16px;
     
     @media screen and (max-width: 768px) {
-        font-size: 40px;
-
-       
-        
+        font-size: 35px;
 `
 
 export const Heading = styled.h1 `

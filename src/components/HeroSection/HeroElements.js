@@ -62,6 +62,8 @@ export const HeroContent = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 `
 
 export const HeroH1 = styled.h1 `
@@ -76,7 +78,8 @@ export const HeroH1 = styled.h1 `
     text-align: center;
 
     @media screen and (max-width: 768px) {
-        font-size: 72px;
+        font-size: 60px;
+        
     }
 
     @media screen and (max-width: 480px) {
@@ -94,16 +97,14 @@ padding-right: 50px;
 font-size: 28px;
 font-weight: bolder;
     text-align: center;
-    max-width: 900px;
+    max-width: 1000px;
 
     
     @media screen and (max-width: 768px) {
-        font-size: 24px;
+        font-size: 18px;
+        margin-bottom: 50px;
     }
 
-    @media screen and (max-width: 480px) {
-        font-size: 18px;
-    }
 `
 export const HeroP2 = styled.p `
 font-family: "Montserrat" !important;
@@ -120,12 +121,9 @@ font-weight: bolder;
 
     
     @media screen and (max-width: 768px) {
-        font-size: 20px;
-    }
-
-    @media screen and (max-width: 480px) {
         font-size: 18px;
     }
+
 `
 
 export const HeroBtnWrapper = styled.div `
@@ -134,6 +132,10 @@ export const HeroBtnWrapper = styled.div `
     flex-direction: column;
     align-items: center;
     
+    @media screen and (max-width: 400px) {
+      text-align: center;
+      
+    }
 `
 
 export const ArrowForward = styled(MdArrowForward) `
@@ -142,7 +144,7 @@ export const ArrowForward = styled(MdArrowForward) `
 `
 export const ArrowRight = styled(MdKeyboardArrowRight) `
 margin-left: 8px;
-font-szie: 20px;
+font-size: 20px;
 `;
 
 export const BtnWrap = styled.div`

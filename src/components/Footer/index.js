@@ -1,10 +1,8 @@
 import React from 'react';
 import Logo  from "../../images/terplilogoforsite.svg"
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from '../Navbar/NavbarElements'
 import {
   FaFacebook,
   FaInstagram,
-  FaYoutube,
   FaTwitter,
   FaLinkedin
 } from 'react-icons/fa';
@@ -14,12 +12,13 @@ import {
   FooterWrap,
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
+  FooterLogo,
   WebsiteRights,
   SocialIcons,
-  SocialIconLink
+  SocialIconLink,
+  BtnWrap,
 } from './FooterElements';
-import {BtnWrap} from "../HeroSection/HeroElements";
+// import {BtnWrap} from "../HeroSection/HeroElements";
 import {Form} from "../Form/Form"
 
 const Footer = () => {
@@ -37,9 +36,9 @@ const Footer = () => {
                 </BtnWrap>
         <SocialMedia>
           <SocialMediaWrap>
-          <NavLogo to ="/" onClick={toggleHome}>
+          <FooterLogo to ="/" onClick={toggleHome}>
                     <img src={Logo} height="150px" width="150px" alt="Logo" />
-                    </NavLogo>
+                    </FooterLogo>
             <WebsiteRights>Terpli © 2021 All Rights Reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='https://www.facebook.com/Terpli-105433821633512' target='_blank' aria-label='Facebook'>
