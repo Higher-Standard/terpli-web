@@ -38,7 +38,7 @@ const Services = () => {
                 <ServicesContainer id="content-mobile" >
       <ServicesWrapper >
         <ServicesCard>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+                <VideoBg autoPlay playsinline loop muted src={Video} type='video/mp4'/>
            
        
           <ServicesH2>
@@ -48,7 +48,7 @@ const Services = () => {
           
         </ServicesCard>
         <ServicesCard>
-        <VideoBg autoPlay loop muted src={Video2} type='video/mp4'/>
+        <VideoBg autoPlay playsinline loop muted src={Video2} type='video/mp4'/>
            
           <ServicesH2>Then Provide Product Insights...</ServicesH2>
           {/* <ServicesIcon src={Icon2} /> */}
@@ -56,13 +56,13 @@ const Services = () => {
       </ServicesWrapper>
       <ServicesWrapper id="content-mobile">
         <ServicesCard>
-        <VideoBg autoPlay loop muted src={Video3} type='video/mp4'/>
+        <VideoBg autoPlay playsinline loop muted src={Video3} type='video/mp4'/>
            
           <ServicesH2>...and Incentivize Reviews</ServicesH2>
           {/* <ServicesIcon src={Icon1} /> */}
         </ServicesCard>
         <ServicesCard>
-        <VideoBg autoPlay loop muted src={Video4} type='video/mp4'/>
+        <VideoBg autoPlay playsinline loop muted src={Video4} type='video/mp4'/>
            
           <ServicesH2>To Generate Consumer Insights!</ServicesH2>
           {/* <ServicesIcon src={Icon4} /> */}
