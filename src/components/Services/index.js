@@ -4,12 +4,18 @@ import Icon1 from '../../images/labdata1.jpg'
 import Icon2 from '../../images/labdata2.jpg'
 import Icon3 from '../../images/labdata.jpg'
 import Icon4 from '../../images/products.jpg'
+import Image1 from '../../images/anaylyze.jpg'
+import Image2 from '../../images/products.jpg'
+import Image3 from '../../images/discounts.jpg'
+import Image4 from '../../images/consumers.jpg'
+
 // import Video from '../../videos/labdata.mp4'
 // import Video2 from '../../videos/products.mp4'
 // import Video3 from '../../videos/sale.mp4'
 // import Video4 from '../../videos/generate2.mp4'
 
 import {
+    Image,
     ServicesContainer,
     ServicesH1,
     ServicesWrapper,
@@ -38,9 +44,8 @@ const Services = () => {
                 <ServicesContainer id="content-mobile" >
       <ServicesWrapper >
         <ServicesCard>
-                <VideoBg autoPlay playsinline loop muted src={Video} type='video/mp4'/>
-           
-       
+                {/* <VideoBg autoPlay playsinline loop muted src={Video} type='video/mp4'/> */}
+                <Image src={Image1} />
           <ServicesH2>
               
               We Analyze Lab Data...</ServicesH2>
@@ -48,22 +53,22 @@ const Services = () => {
           
         </ServicesCard>
         <ServicesCard>
-        <VideoBg autoPlay playsinline loop muted src={Video2} type='video/mp4'/>
-           
+        {/* <VideoBg autoPlay playsinline loop muted src={Video2} type='video/mp4'/> */}
+        <Image src={Image2} />
           <ServicesH2>Then Provide Product Insights...</ServicesH2>
           {/* <ServicesIcon src={Icon2} /> */}
         </ServicesCard>
       </ServicesWrapper>
       <ServicesWrapper id="content-mobile">
         <ServicesCard>
-        <VideoBg autoPlay playsinline loop muted src={Video3} type='video/mp4'/>
-           
+        {/* <VideoBg autoPlay playsinline loop muted src={Video3} type='video/mp4'/> */}
+        <Image src={Image3} />
           <ServicesH2>...and Incentivize Reviews</ServicesH2>
           {/* <ServicesIcon src={Icon1} /> */}
         </ServicesCard>
         <ServicesCard>
-        <VideoBg autoPlay playsinline loop muted src={Video4} type='video/mp4'/>
-           
+        {/* <VideoBg autoPlay playsinline loop muted src={Video4} type='video/mp4'/> */}
+        <Image src={Image4} />
           <ServicesH2>To Generate Consumer Insights!</ServicesH2>
           {/* <ServicesIcon src={Icon4} /> */}
         </ServicesCard>

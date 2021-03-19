@@ -3,10 +3,13 @@ import Icon1 from '../../images/impact-1.jpg'
 import Icon2 from '../../images/svg-2.svg'
 import Icon3 from '../../images/svg-3.svg'
 import Alex from '../Alex/Portfolio'
-// import Video from '../../videos/consumers.mp4'
+import Image1 from '../../images/consumers.jpg'
+import Image2 from '../../images/retailers.jpg'
+import Image3 from '../../images/brands.jpg'
 // import Video2 from '../../videos/retailers.mp4'
 // import Video3 from '../../videos/brands.mp4'
 import {
+  Card,
     ServicesContainer,
     ServicesH1,
     ServicesWrapper,
@@ -14,10 +17,11 @@ import {
     ServicesIcon,
     ServicesH2,
     ServicesP,
-    VideoBg
+    VideoBg,
+    Image,
 } from './ServicesElements'
 
-const Video = "https://ik.imagekit.io/87w1vdmbl9d/websitemp4/consumers.mp4"
+// const Video = "https://ik.imagekit.io/87w1vdmbl9d/websitemp4/consumers.mp4"
 const Video2 = "https://ik.imagekit.io/87w1vdmbl9d/websitemp4/retailers.mp4"
 const Video3 = "https://ik.imagekit.io/87w1vdmbl9d/websitemp4/brands.mp4"
          
@@ -68,7 +72,10 @@ const Impact = () => {
                 <ServicesContainer id="content-mobile" >
       <ServicesWrapper >
         <ServicesCard>
-                <VideoBg autoPlay playsinline loop muted src={Video} type='video/mp4'/>
+
+                {/* <VideoBg autoPlay playsinline loop muted src={Video} type='video/mp4'/> */}
+                <Image src={Image1} />
+         
            
        
           <ServicesH2>Consumers</ServicesH2>
@@ -79,7 +86,8 @@ const Impact = () => {
         //             <ServicesP>Sumbit Review for Personalized Recommendations</ServicesP>
         </ServicesCard>
         <ServicesCard>
-        <VideoBg autoPlay playsinline loop muted src={Video2} type='video/mp4'/>
+        <Image src={Image2} />
+        {/* <VideoBg autoPlay playsinline loop muted src={Video2} type='video/mp4'/> */}
            
           <ServicesH2>Retailers</ServicesH2>
           <ServicesP>Marketing on Mobile-App for New Products and Promotions</ServicesP>
@@ -91,8 +99,8 @@ const Impact = () => {
       </ServicesWrapper>
       <ServicesWrapper id="content-mobile">
         <ServicesCard>
-        <VideoBg autoPlay playsinline loop muted src={Video3} type='video/mp4'/>
-           
+        {/* <VideoBg autoPlay playsinline loop muted src={Video3} type='video/mp4'/> */}
+        <Image src={Image3} />
           <ServicesH2>Brands</ServicesH2>
           <ServicesP>Submit and Access Lab Testing Data</ServicesP>
         //             <ServicesP>Display Deepr Product Info for Customers</ServicesP>

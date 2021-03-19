@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
+import myImage from '../../images/terpli_header.png';
+
 
 
 
 export const HeroContainer = styled.div `
-    background: #0c0c0c;
+    background-image: url(${myImage});
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,4 +151,10 @@ export const BtnWrap = styled.div`
   font-size: 24px;
 `;
 
+export const Image = styled.img `
+backgroundImage: url(${myImage});
+backgroundPosition: 'center',
+backgroundSize: 'cover',
+backgroundRepeat: 'no-repeat'
+`
 

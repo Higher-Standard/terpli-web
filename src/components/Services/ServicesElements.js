@@ -104,7 +104,7 @@ color: #28183B;
 @media screen and (max-width: 768px) {
     font-size: 14px;
     color: #E2CDFF;
-    padding-top: 40px;
+    padding-top: 17px;
     
 
 `
@@ -115,6 +115,7 @@ export const ServicesP = styled.p`
 color: #E2CDFF;
   font-size: 32px;
   text-align: center;
+  
 `;
 
 export const HeroBg = styled.div `
@@ -140,4 +141,10 @@ margin-top: -50px;
     background: #232a34;
 
 
+`
+
+export const Image = styled.img `
+    height: 200px;
+    width: 350px;
+    margin-top: -50px;
 `

@@ -143,7 +143,7 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 border-radius: 10px;
-height: 340px;
+height: 370px;
 width: 340px;
 padding: 50px;
 margin-top: 50px;
@@ -241,5 +241,11 @@ margin-top: -50px;
     background-size: cover;
     background: #232a34;
 
+`
+export const Image = styled.img `
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
 
+    margin-top: -50px;
 `
