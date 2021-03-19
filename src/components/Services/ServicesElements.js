@@ -57,7 +57,7 @@ transition: all 0.2s ease-in-out;
 }
     @media screen and (max-width: 768px) {
       height: 250px;
-      width: 250px;
+      width: 350px;
       margin-top: 20px;
       background-color: #30204E;
     }
@@ -131,7 +131,7 @@ export const HeroBg = styled.div `
 
 export const VideoBg = styled.video `
 height: 100%;
-width: 250px;
+width: 350px;
 margin-top: -50px;
 
     -o-object-fit: cover;
