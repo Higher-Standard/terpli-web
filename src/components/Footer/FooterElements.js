@@ -9,10 +9,13 @@ export const FooterWrap = styled.div`
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   max-width: 1100px;
+  margin-left: 350px
 
+  @media screen and (max-width: 1200px) {
+    margin: none;
+  }
 `;
 
 export const FooterLogo = styled.div `
@@ -80,8 +83,9 @@ export const FooterLink = styled(Link)`
 `;
 
 export const SocialMedia = styled.section`
-  max-width: 1000px;
+  max-width: 100vw;
   width: 100%;
+  align-items: center
 `;
 
 export const SocialMediaWrap = styled.div`
@@ -89,7 +93,7 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 40px auto 0 auto;
+  // margin: 40px auto 0 auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;

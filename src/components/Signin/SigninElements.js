@@ -92,6 +92,7 @@ export const FormInput = styled.input`
   margin-bottom: 16px;
   border: none;
   border-radius: 20px;
+  margin-right: 20px;
 
   @media screen and (max-width: 400px) {
     height: 60px;
