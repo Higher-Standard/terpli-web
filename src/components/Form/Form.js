@@ -47,7 +47,8 @@ export class Form extends Component {
     handleSubmitEmail(e) {
         axios({
             headers: {
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "*",
+                "Referrer-Policy": " origin-when-cross-origin"
             },
             method: 'post',
             // this is the url for webnode db
@@ -76,7 +77,9 @@ export class Form extends Component {
     handleSubmitInvestor(e) {
         axios({
             headers: {
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "*",
+                "Referrer-Policy": " origin-when-cross-origin"
+
             },
             method: 'post',
             // url for aws webnode db
@@ -119,7 +122,7 @@ export class Form extends Component {
             return (
 
                 <FormWrap>
-                    <img src={Logo} style = {{marginLeft: '30px', paddingBottom: '20px', marginTop: '80px'}} height="150px" width="150px" alt="Logo" />
+                    <img src={Logo} style={{ marginLeft: '30px', paddingBottom: '20px', marginTop: '80px' }} height="150px" width="150px" alt="Logo" />
                     <FormContent>
 
                         <FormElement onSubmit={this.handleSubmitInvestor}>
