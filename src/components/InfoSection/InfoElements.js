@@ -8,6 +8,7 @@ export const InfoContainer = styled.div`
         padding: 100px 0;
             height: 1300px;
             padding-top: 50px;
+            height: 1100px;
         }
     }
 `
@@ -22,6 +23,8 @@ export const InfoWrapper = styled.div `
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+   
 `
 
 export const InfoRow = styled.div`
@@ -51,6 +54,8 @@ export const TextWrapper = styled.div `
     max-width: 540px;
     padding-top: 50px;
     padding-bottom: 60px;
+
+    
 `
 
 export const TopLine = styled.p `
@@ -62,6 +67,12 @@ export const TopLine = styled.p `
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+
+       
+        
 `
 
 export const Heading = styled.h1 `
