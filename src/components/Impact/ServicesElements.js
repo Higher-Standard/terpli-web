@@ -111,7 +111,7 @@ export const ServicesContainer = styled.div `
     background: #4B3562;
     padding-bottom: 45px;
     @media screen and (max-width: 786px) {
-        height: 3000px;
+        height: 2000px;
         padding-top: 50px;
     }
 
@@ -143,7 +143,7 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 border-radius: 10px;
-height: 340px;
+height: 370px;
 width: 340px;
 padding: 50px;
 margin-top: 50px;
@@ -241,5 +241,11 @@ margin-top: -50px;
     background-size: cover;
     background: #232a34;
 
+`
+export const Image = styled.img `
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
 
+    margin-top: -50px;
 `

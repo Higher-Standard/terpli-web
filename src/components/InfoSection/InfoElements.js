@@ -8,7 +8,6 @@ export const InfoContainer = styled.div`
         padding: 100px 0;
             height: 1300px;
             padding-top: 50px;
-            height: 1100px;
         }
     }
 `
