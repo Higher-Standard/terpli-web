@@ -48,7 +48,7 @@ export class Form extends Component {
         axios({
             headers: {
                 "Access-Control-Allow-Origin": "*",
-                "Referrer-Policy": "origin-when-cross-origin"
+                "Referrer-Policy": "unsafe-url"
             },
             method: 'post',
             // this is the url for webnode db
@@ -78,7 +78,7 @@ export class Form extends Component {
         axios({
             headers: {
                 "Access-Control-Allow-Origin": "*",
-                "Referrer-Policy": "origin-when-cross-origin"
+                "Referrer-Policy": "unsafe-url"
             },
             method: 'post',
             // url for aws webnode db
