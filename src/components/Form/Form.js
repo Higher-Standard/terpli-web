@@ -4,9 +4,8 @@ import Logo from "./../../images/terplilogoforsite.svg"
 
 
 import {
-    Container,
+ 
     FormWrap,
-    Icon,
     FormContent,
     FormElement,
     FormH1,
@@ -14,7 +13,6 @@ import {
     FormInput,
     FormButton,
     FormButton2,
-    Text,
     FormColumn,
     FormMessageInput
 } from '../Signin/SigninElements';
