@@ -4,7 +4,8 @@ import {FaBars} from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import {IconContext} from "react-icons/lib"
 import Logo  from "../../images/terplilogoforsite.svg"
-import ContactPopUp from '../ContactPopUp'
+import App from '../Modal/index'
+
 
 
 
@@ -30,10 +31,15 @@ const Navbar = ({toggle}) => {
         <>
         <IconContext.Provider value = {{color: '#C2E531'}}>
             <Nav scrollNav ={scrollNav}>
+
                 <NavbarContainer>
                     <NavLogo to ="/" onClick={toggleHome}>
+                       
                     <img src={Logo} height="150px" width="150px" alt="Logo" />
+                  
                     </NavLogo>
+                    
+                    
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
@@ -124,23 +130,7 @@ const Navbar = ({toggle}) => {
                             </NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        
-                        <NavBtnLink 
-                        to="/signin"
-                              smooth={true}
-                              duration={500}
-                              spy={true} 
-                              exact = 'true' 
-                              offset={-80}
-                              activeClass="active" //not sure why this isn't working
-                        >
-                            
-                            Contact Us
-                        </NavBtnLink>
-
-                    </NavBtn>
-                   <ContactPopUp/>
+                            <App></App>
                 </NavbarContainer>
             </Nav>
             </IconContext.Provider>

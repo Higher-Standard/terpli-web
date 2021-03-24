@@ -77,6 +77,7 @@ export const NavItem = styled.li`
 // position of navbar underline ^^ //
 
 export const NavBtn = styled.nav`
+  margin-top: 7%;
   display: flex;
   align-items: center;
 

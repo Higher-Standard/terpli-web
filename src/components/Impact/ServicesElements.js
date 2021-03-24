@@ -111,12 +111,12 @@ export const ServicesContainer = styled.div `
     background: #4B3562;
     padding-bottom: 45px;
     @media screen and (max-width: 786px) {
-        height: 2000px;
+        height: 2300px;
         padding-top: 50px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 2200px;
+        height: 2300px;
         padding-bottom: 0px;
         padding-top: 0px;
     }

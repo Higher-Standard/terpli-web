@@ -9,7 +9,8 @@ import Product from '../components/Product';
 import Sidebar from '../components/Sidebar';
 import Impact from '../components/Impact';
 import Team from '../components/Team';
-import Modal from 'antd/lib/modal/Modal';
+import Sponsors from "../components/Sponsors/index"
+import Contact from '../components/Contact';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -31,7 +32,8 @@ const Home = () => {
             <Product />
             <Impact />
             <Team />
-            <Modal />
+            <Sponsors/>
+            <Contact />
             {/* <InfoSection {...homeObjFour} /> */}
             <Footer />
 
