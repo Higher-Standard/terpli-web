@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Logo from "./../../images/terplilogoforsite.svg"
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 
 import {
-    Container,
+ 
     FormWrap,
-    Icon,
     FormContent,
     FormElement,
     FormH1,
@@ -14,12 +14,17 @@ import {
     FormInput,
     FormButton,
     FormButton2,
-    Text,
     FormColumn,
-    FormMessageInput
+
 } from '../Signin/SigninElements';
 
+const options = [
+    'Investor', 'Cultivator', 'Manufacturer', 'Retailer','Researcher'
+  ];
+  const defaultOption = options[0];
+
 export class Form extends Component {
+    
     constructor(props) {
         super(props);
         // if the type of form is email than do this, if its investor do this ...
@@ -115,16 +120,20 @@ export class Form extends Component {
                 <form onSubmit={this.handleSubmitEmail}>
                     <FormInput placeholder='Email' value={this.state.email} name='email' onChange={this.handleChange}></FormInput>
                     <FormButton2>Submit</FormButton2>
+                    
                 </form>
             )
         } else if (this.props.type === 'investor') {
+            
             return (
+                
 
                 <FormWrap>
-                    <img src={Logo} style={{ marginLeft: '30px', paddingBottom: '20px', marginTop: '80px' }} height="150px" width="150px" alt="Logo" />
+                    {/* <img src={Logo} style={{ marginLeft: '30px', paddingBottom: '20px', marginTop: '80px' }} height="150px" width="150px" alt="Logo" /> */}
                     <FormContent>
 
                         <FormElement onSubmit={this.handleSubmitInvestor}>
+                          
                             <FormH1>Contact Form</FormH1>
                             <FormColumn>
                                 <FormLabel htmlFor="name">Name</FormLabel>
@@ -132,9 +141,12 @@ export class Form extends Component {
                                 <FormLabel htmlFor="email">Email</FormLabel>
                                 <FormInput value={this.state.email} name='email' onChange={this.handleChange}></FormInput>
                             </FormColumn>
+                            <Dropdown className = "dropdown" options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
                             <FormLabel htmlFor="message">Message</FormLabel>
-                            <FormMessageInput value={this.state.message} name='message' onChange={this.handleChange}></FormMessageInput>
-                            <FormButton>Submit</FormButton>
+                            {/* <FormMessageInput value={this.state.message} name='message' onChange={this.handleChange} >
+                            </FormMessageInput> */}
+                            <textarea className = "formInput"></textarea>
+                            <FormButton >Submit</FormButton>
                         </FormElement>
 
                     </FormContent>
@@ -150,9 +162,11 @@ export class Form extends Component {
             )
         }
     }
+    
     render() {
         return this.formatForm()
     }
 }
+
 
 export default Form

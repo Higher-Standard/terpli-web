@@ -8,7 +8,8 @@ export const SidebarContainer = styled.aside `
     z-index: 999;
     width: 100%;
     height: 100%;
-    background-color:#1DA379;
+    background-color: #6C5189;
+    font-family: "Montserrat"; 
     display: grid;
     align-itmes; center;
     top: 0;
@@ -16,15 +17,19 @@ export const SidebarContainer = styled.aside `
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+
+    
 `
 
 export const CloseIcon = styled(FaTimes) `
-    color: #fff   
+    color: transparent; 
 `
 export const Icon = styled.div `
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
+    position:;
+    margin-top: -40px;
+    margin-left: 6%;
+    // top: 1.2rem;
+    // right: 1.5rem;
     background: transparent;
     font-size: 2rem;
     cursor: pointer;
@@ -39,12 +44,21 @@ export const SidebarWrapper = styled.div `
 export const SidebarMenu = styled.ul `
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,80px);
+    grid-template-rows: repeat(9,70px);
     text-align: center;
+    overflow: scroll
     
     @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
-    }`
+        grid-template-rows: repeat(9, 50px);
+        overflow: scroll;
+    }
+    
+    @media screen and (max-height: 700px) {
+        grid-template-rows: repeat(9, 50px);
+        overflow: scroll;
+    }
+    
+    `
 
 export const SidebarLink = styled(LinkS) `
     display: flex;
@@ -55,7 +69,7 @@ export const SidebarLink = styled(LinkS) `
     list-style: none;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: #423253;
+    color: #D0E678;
     curlsor: pointer;
     font-family: "Montserrat" !important;
 

@@ -11,7 +11,7 @@ export const FooterWrap = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 1100px;
-  margin-left: 350px;
+  margin-left: 5%;
 
   @media screen and (max-width: 1200px) {
     margin: none;

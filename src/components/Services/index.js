@@ -34,7 +34,7 @@ const Video4 = "https://ik.imagekit.io/87w1vdmbl9d/websitemp4/generate2.mp4"
 const Services = () => {
     return (
         
-        <ServicesContainer id="operation ">
+        <ServicesContainer id="operation">
                 <ServicesH1 >How We Operate</ServicesH1>
             <ServicesWrapper>
                 <div id="content-desktop">

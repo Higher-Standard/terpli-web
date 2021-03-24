@@ -1,10 +1,6 @@
 import one from "../../images/consumers.jpg"
 import two from "../../images/retailers.jpg"
 import three from "../../images/brands.jpg"
-import four from "../../images/products.jpg"
-import five from "../../images/image-1.png"
-import six from "../../images/image-1.png"
-import Icon from "../../images/discounts.jpg"
 
 export const data = [
     {
