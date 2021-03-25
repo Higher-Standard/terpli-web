@@ -123,7 +123,7 @@ fullWidth
   open={Boolean(anchorEl)}
   onClose={handleClose}
 >
-  <MenuItem onClick={handleClose}>Investor</MenuItem>
+  <MenuItem onClick={handleClose}>Inv</MenuItem>
   <MenuItem onClick={handleClose}>Cultivator</MenuItem>
   <MenuItem onClick={handleClose}>Manufacturer</MenuItem>
   <MenuItem onClick={handleClose}>Retailer</MenuItem>
