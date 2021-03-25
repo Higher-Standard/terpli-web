@@ -67,8 +67,112 @@ export default function SignUp() {
 
   return (
     <Container component="main" maxWidth="xs">
-         <Typography component="h1" variant="h5">
-          We are still building out our site!  Please e-mail us at info@terpli.io for more info!</Typography>
+      <CssBaseline />
+      <div className={classes.paper}>
+        {/* <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar> */}
+        <Typography component="h1" variant="h5">
+          Contact Us
+        </Typography>
+        <form className={classes.form} noValidate>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                autoComplete="fname"
+                name="firstName"
+                variant="outlined"
+                required
+                fullWidth
+                id="firstName"
+                label="First Name"
+                autoFocus
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                id="lastName"
+                label="Last Name"
+                name="lastName"
+                autoComplete="lname"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                id="email"
+                label="Email Address"
+                name="email"
+                autoComplete="email"
+              />
+            </Grid>
+            <Grid item xs={12}>
+            <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+   Select Category
+</Button>
+<Menu
+fullWidth
+  id="simple-menu"
+  anchorEl={anchorEl}
+  keepMounted
+  open={Boolean(anchorEl)}
+  onClose={handleClose}
+>
+  <MenuItem onClick={handleClose}>Inv</MenuItem>
+  <MenuItem onClick={handleClose}>Cultivator</MenuItem>
+  <MenuItem onClick={handleClose}>Manufacturer</MenuItem>
+  <MenuItem onClick={handleClose}>Retailer</MenuItem>
+  <MenuItem onClick={handleClose}>Researcher</MenuItem>
+  <MenuItem onClick={handleClose}>Other</MenuItem>
+</Menu>
+            </Grid>
+            <Grid item xs={12}>
+            <form className={classes.root} noValidate autoComplete="off">
+            
+  
+                <TextField id="outlined-multiline-flexible"
+          label="message"
+          multiline
+          rowsMax={10}
+          fullWidth
+       
+          
+          variant="outlined"/>
+            </form>
+            </Grid>
+            <Grid item xs={12}>
+              <FormControlLabel
+                control={<Checkbox value="allowExtraEmails" color="primary" />}
+                label="I want to receive inspiration, marketing promotions and updates via email."
+              />
+            </Grid>
+          </Grid>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
+          >
+            Submit
+          </Button>
+          <Grid container justify="flex-end">
+            <Grid item>
+              {/* <Link href="#" variant="body2">
+                Already have an account? Sign in
+              </Link> */}
+            </Grid>
+          </Grid>
+        </form>
+      </div>
+      <Box mt={5}>
+        <Copyright />
+      </Box>
     </Container>
   );
 }
