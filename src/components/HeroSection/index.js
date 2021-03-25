@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 // import Video from '../../videos/video-3.mp4'
-import { Image, HeroContainer, HeroBg, VideoBg, BtnWrap, HeroContent, HeroH1, HeroP, HeroP2, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements'
+import { Image, HeroContainer, BtnWrap, HeroContent, HeroH1, HeroP, HeroP2, HeroBtnWrapper} from './HeroElements'
 
 import Form from '../Form/Form.js';
 

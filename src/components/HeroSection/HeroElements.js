@@ -7,6 +7,8 @@ import myImage from '../../images/terpli_header.png';
 
 export const HeroContainer = styled.div `
     background-image: url(${myImage});
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

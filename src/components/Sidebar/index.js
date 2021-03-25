@@ -1,14 +1,31 @@
-import React from 'react'
+import React, {
+    forwardRef,
+    useImperativeHandle,
+    useRef,
+    useState
+  } from 'react'
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SideBarRoute} from "./SideBarElements";
+import Logo  from "../../images/terplilogoforsite.svg"
+
 
 const Sidebar = ({isOpen, toggle}) => {
+    const modalRef = useRef();
     return (
+        <>
+
         <SidebarContainer isOpen ={isOpen} onClick ={toggle}>
-            <Icon onClick = {toggle}>
-                <CloseIcon/>
-            </Icon >
+          
             <SidebarWrapper>
                 <SidebarMenu>
+            <Icon onClick = {toggle}>
+           
+                       
+                       <img src={Logo} height="150px" width="150px" alt="Logo" />
+                     
+                     
+                <CloseIcon/>
+            </Icon >
+         
                     <SidebarLink to="about" onClick = {toggle}>
                         The Problem
                     </SidebarLink>
@@ -30,15 +47,28 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="team" onClick = {toggle}>
                         Team
                     </SidebarLink>
+                    <SidebarLink to="contact" onClick = {toggle}>
+                            Contact Us
+                    </SidebarLink>
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SideBarRoute to = "/signin">
+                    {/* <SideBtnWrap>
+                    <SideBarRoute >
                Contact Us
                     </SideBarRoute>
                 </SideBtnWrap>
+                  */}
             </SidebarWrapper>
         </SidebarContainer>
+        
+       
+                    {/* <Modal ref={modalRef}> */}
+        {/* <Form type='investor' ></Form> */}
+    
+     
+        
+       </> 
     )
 }
+
 
 export default Sidebar
