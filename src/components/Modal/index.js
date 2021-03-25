@@ -76,7 +76,7 @@ class App extends React.Component {
                             </FormMessageInput> */}
                             {/* <textarea className = "formInput"></textarea>
                             <FormButton >Submit</FormButton>
-                        </FormElement> */} 
+                        </FormElement> */}
                         <SignUp/>
 
         </Modal>
