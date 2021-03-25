@@ -10,7 +10,7 @@ import SignUp from '../Modal/SIgnUp.js';
 const Contact = () => {
     return (
         <>
-        <div id="content-contact">
+        <div id="content-contact" className="content-contact" >
       
         <SignUp/>
 

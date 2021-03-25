@@ -5,8 +5,13 @@
   font-family: "Montserrat" 
 }
 
+#root {
+  background:#D5E690 ;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 
 .cell {
   position: relative;
@@ -109,7 +114,10 @@
 
 @media screen and (max-width: 1024px) {
 
-  #content-contact {display: block;}
+  #content-contact {display: block;
+  background-color: #D5E690 }
+
+
   
   }
 

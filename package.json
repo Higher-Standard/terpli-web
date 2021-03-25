@@ -2,7 +2,8 @@
   "name": "terpliwebsite",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://ec2-18-191-77-143.us-east-2.compute.amazonaws.com:8002",
+  
+  "proxy": "https://api.terply.io",
   "engines": {
     "node": "12.x"
   },
