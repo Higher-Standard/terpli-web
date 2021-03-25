@@ -25,6 +25,7 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "deploy": "aws s3 sync build/ s3://terply.io",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

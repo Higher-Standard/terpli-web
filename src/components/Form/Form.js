@@ -52,7 +52,7 @@ export class Form extends Component {
             },
             method: 'post',
             // this is the url for webnode db
-            url: 'http://ec2-18-191-77-143.us-east-2.compute.amazonaws.com:8002/api/email/new',
+            url: 'http://ec2-3-142-36-89.us-east-2.compute.amazonaws.com:8002/api/email/new',
             data: this.state
         })
             .then(res => {
@@ -82,7 +82,7 @@ export class Form extends Component {
             },
             method: 'post',
             // url for aws webnode db
-            url: 'http://ec2-18-191-77-143.us-east-2.compute.amazonaws.com:8002/api/investor/new',
+            url: 'http://ec2-3-142-36-89.us-east-2.compute.amazonaws.com:8002/api/investor/new',
             data: this.state
         })
             .then(res => {
@@ -106,12 +106,6 @@ export class Form extends Component {
         console.log(this.state)
         if (this.props.type === 'email') {
             return (
-
-                // <form onSubmit={this.handleSubmitEmail}>
-                //     <label htmlFor="email">Email:</label>
-                //     <input value={this.state.email} type="text" id="email" name="email" onChange={this.handleChange} />
-                //     <input type="submit" value="Submit" />
-                // </form>
                 <form onSubmit={this.handleSubmitEmail}>
                     <FormInput placeholder='Email' value={this.state.email} name='email' onChange={this.handleChange}></FormInput>
                     <FormButton2>Submit</FormButton2>
@@ -121,7 +115,7 @@ export class Form extends Component {
             return (
 
                 <FormWrap>
-                    <img src={Logo} style={{ marginLeft: '30px', paddingBottom: '20px', marginTop: '80px' }} height="150px" width="150px" alt="Logo" />
+                    <img src={Logo} href='terpli.io' style={{ marginLeft: '30px', paddingBottom: '20px', marginTop: '80px' }} height="150px" width="150px" alt="Logo" />
                     <FormContent>
 
                         <FormElement onSubmit={this.handleSubmitInvestor}>
@@ -139,14 +133,6 @@ export class Form extends Component {
 
                     </FormContent>
                 </FormWrap>
-
-
-                // <input value={this.state.email} type="text" id="email" name="email" onChange={this.handleChange} />
-                // <label htmlFor="name">Name:</label>
-                // <input value={this.state.name} type="text" id="name" name="name" onChange={this.handleChange} />
-                // <label htmlFor="message">Message:</label>
-                // <input value={this.state.message} type="textarea" id="message" name="message" onChange={this.handleChange} />
-                // <input type="submit" value="Submit" />
             )
         }
     }
