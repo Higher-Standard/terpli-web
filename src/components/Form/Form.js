@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
 
 import {
  
@@ -133,13 +134,17 @@ export class Form extends Component {
                     <FormContent>
 
                         <FormElement onSubmit={this.handleSubmitInvestor}>
-                          
+                        <Container fluid>
                             <FormH1>Contact Form</FormH1>
                             <FormColumn>
+                                <Row>
                                 <FormLabel htmlFor="name">Name</FormLabel>
                                 <FormInput value={this.state.name} name='name' onChange={this.handleChange}></FormInput>
+                                </Row>
+                                <Row>
                                 <FormLabel htmlFor="email">Email</FormLabel>
                                 <FormInput value={this.state.email} name='email' onChange={this.handleChange}></FormInput>
+                                </Row>
                             </FormColumn>
                             <Dropdown className = "dropdown" options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
                             <FormLabel htmlFor="message">Message</FormLabel>
@@ -147,6 +152,7 @@ export class Form extends Component {
                             </FormMessageInput> */}
                             <textarea className = "formInput"></textarea>
                             <FormButton >Submit</FormButton>
+                            </Container>
                         </FormElement>
 
                     </FormContent>

@@ -17,6 +17,7 @@ import {
 
 } from '../Signin/SigninElements';
 import Dropdown from 'react-dropdown';
+import SignUp from "./SIgnUp";
 
 const options = [
     'Investor', 'Cultivator', 'Manufacturer', 'Retailer','Researcher'
@@ -61,8 +62,7 @@ class App extends React.Component {
         open={open} onClose={this.onCloseModal}>
          
 
-                        <FormElement onSubmit={this.handleSubmitInvestor}>
-                          
+                        {/* <FormElement onSubmit={this.handleSubmitInvestor}>
                             <FormH1>Contact Form</FormH1>
                             <FormColumn>
                                 <FormLabel htmlFor="name">Name</FormLabel>
@@ -74,9 +74,10 @@ class App extends React.Component {
                             <FormLabel htmlFor="message">Message</FormLabel>
                             {/* <FormMessageInput value={this.state.message} name='message' onChange={this.handleChange} >
                             </FormMessageInput> */}
-                            <textarea className = "formInput"></textarea>
+                            {/* <textarea className = "formInput"></textarea>
                             <FormButton >Submit</FormButton>
-                        </FormElement>
+                        </FormElement> */} 
+                        <SignUp/>
 
         </Modal>
       </div>
