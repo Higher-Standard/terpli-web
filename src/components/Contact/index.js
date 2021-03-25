@@ -5,14 +5,15 @@ import {
   Container
 
 } from './ContactElements.js';
+import SignUp from '../Modal/SIgnUp.js';
 
 const Contact = () => {
     return (
         <>
         <div id="content-contact">
-      <Container id="contact">
-        <Form type='investor'></Form>
-      </Container>
+      
+        <SignUp/>
+
       </div>
     </>
     )
