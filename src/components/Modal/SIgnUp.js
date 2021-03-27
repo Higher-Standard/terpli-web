@@ -65,7 +65,7 @@ export default function SignUp() {
       },
       method: 'post',
       // this is the url for webnode db
-      url: 'https://api.terply.io/api/investor/new',
+      url: 'https://api.terpli.io/api/investor/new',
       data: investorInfo
     })
       .then(res => {

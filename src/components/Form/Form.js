@@ -46,7 +46,7 @@ export class Form extends Component {
             },
             method: 'post',
             // this is the url for webnode db
-            url: 'https://api.terply.io/api/email/new',
+            url: 'https://api.terpli.io/api/email/new',
             data: this.state
         })
             .then(res => {
