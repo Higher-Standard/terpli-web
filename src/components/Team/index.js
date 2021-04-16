@@ -7,27 +7,19 @@ import Mike from "../../images/Mike.jpeg"
 import James from "../../images/James.jpeg"
 import Alfred from "../../images/AlfredMiranda.jpeg"
 import Adrian from "../../images/Adrian.jpeg"
+import Peter1 from "./Peter"
+import Ryan1 from "./Ryan"
+import Alex1 from "./Alex"
+import Oliver1 from "./Oliver"
 import {
-    FooterContainer,
-    FooterWrap,
-    SocialMedia,
-    SocialMediaWrap,
-    SocialLogo,
-    WebsiteRights,
-    SocialIcons,
     SocialIconLink
   } from '../Footer/FooterElements';
 import {
-    FaFacebook,
-    FaInstagram,
-    FaYoutube,
-    FaTwitter,
     FaLinkedin
   } from 'react-icons/fa';
 
 import {
-    HeroBg, 
-    VideoBg,
+  
     ServicesContainer,
     ServicesH1,
     ServicesWrapper,
@@ -35,7 +27,6 @@ import {
     ServicesIcon,
     ServicesH2,
     ServicesP,
-    ServicesP2,
     ServicesWrap,
     ServicesWrapper2,
     ServicesCard2,
@@ -56,7 +47,9 @@ const Team = () => {
                     <SocialIconLink href='https://www.linkedin.com/in/kasperpeter/' target='_blank' aria-label='Linkedin'>
                 <FaLinkedin />
                         </SocialIconLink>
-                    <ServicesH2>Peter Kasper</ServicesH2>
+                    <ServicesH2>
+                        <Peter1/>
+                    </ServicesH2>
                     <ServicesP>Founder/CEO</ServicesP>
                     
                     </ServicesCard>
@@ -75,7 +68,9 @@ const Team = () => {
                     <SocialIconLink href='https://www.linkedin.com/in/alexanderjahani/' target='_blank' aria-label='Linkedin'>
                 <FaLinkedin />
                         </SocialIconLink>
-                    <ServicesH2>Alex Jahani</ServicesH2>
+                    <ServicesH2>
+                        <Alex1></Alex1>
+                    </ServicesH2>
                     <ServicesP>Head of UX and Design</ServicesP>
                     </ServicesCard2>
                 <ServicesCard2>
@@ -83,7 +78,9 @@ const Team = () => {
                     <SocialIconLink href='https://www.linkedin.com/in/ryangbraun/' target='_blank' aria-label='Linkedin'>
                 <FaLinkedin />
                         </SocialIconLink>
-                    <ServicesH2>Ryan Braun</ServicesH2>
+                    <ServicesH2>
+                        <Ryan1/>
+                    </ServicesH2>
                     <ServicesP>Front-End Engineer</ServicesP>
                 </ServicesCard2>
                 <ServicesCard2>
@@ -91,7 +88,9 @@ const Team = () => {
                     <SocialIconLink href='https://www.linkedin.com/in/oliver-bigelow-b623581a5/' target='_blank' aria-label='Linkedin'>
                 <FaLinkedin />
                         </SocialIconLink>
-                    <ServicesH2>Oliver Bigelow</ServicesH2>
+                    <ServicesH2>
+                        <Oliver1/>
+                    </ServicesH2>
                     <ServicesP>Back-End Engineer</ServicesP>
                     
                 </ServicesCard2>

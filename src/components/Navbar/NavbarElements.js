@@ -41,6 +41,7 @@ export const NavLogo = styled(LinkR)`
   margin-right: 50px;
   font-weight: bold;
   text-decoration: none;
+  padding-bottom: 10px;
 
 
 `;

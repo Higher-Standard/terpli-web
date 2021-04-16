@@ -3,7 +3,7 @@ import {animateScroll as scroll} from 'react-scroll'
 import {FaBars} from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import {IconContext} from "react-icons/lib"
-import Logo  from "../../images/terplilogoforsite.svg"
+import Logo  from "../../images/Terpli_logo.png"
 import App from '../Modal/index'
 
 
@@ -35,7 +35,7 @@ const Navbar = ({toggle}) => {
                 <NavbarContainer>
                     <NavLogo to ="/" onClick={toggleHome}>
                        
-                    <img src={Logo} height="150px" width="150px" alt="Logo" />
+                    <img src={Logo} height="65px" width="150px" alt="Logo" />
                   
                     </NavLogo>
                     
@@ -58,7 +58,7 @@ const Navbar = ({toggle}) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover"
+                            <NavLinks to="science"
                                   smooth={true}
                                   duration={500}
                                   spy={true} 
@@ -66,7 +66,7 @@ const Navbar = ({toggle}) => {
                                   offset={-80}
                                   activeClass="active" //not sure why this isn't working
                             >
-                                Development
+                                Science
                             </NavLinks>
                         </NavItem>
                         <NavItem>
