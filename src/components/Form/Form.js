@@ -4,6 +4,8 @@ import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
+import TextField from "@material-ui/core/TextField"
+import Button from "@material-ui/core/Button"
 import {
     FormWrap,
     FormContent,
@@ -67,10 +69,12 @@ export class Form extends Component {
         console.log(this.state)
         if (this.props.type === 'email') {
             return (
-                <form onSubmit={this.handleSubmitEmail}>
-                    <FormInput placeholder='Email' value={this.state.email} name='email' onChange={this.handleChange}></FormInput>
-                    <FormButton2>Submit</FormButton2>
-                </form>
+                <div >
+                    {/* <FormInput placeholder='Email' value={this.state.email} name='email' onChange={this.handleChange}></FormInput> */}
+                    {/* <FormButton2>Submit</FormButton2> */}
+                    <TextField onChange={this.handleChange} value={this.state.email} name='email'  id="filled-basic" className="inputfield" label="Email" color="white" variant="filled" />
+                    <Button onClick={this.handleSubmitEmail} variant="outlined" color="secondary" className="submit">Submit</Button>
+                </div>
             )
         }
     }

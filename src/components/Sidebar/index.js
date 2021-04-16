@@ -5,7 +5,7 @@ import React, {
     useState
   } from 'react'
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SideBarRoute} from "./SideBarElements";
-import Logo  from "../../images/terplilogoforsite.svg"
+import Logo  from "../../images/Terpli_logo.png"
 
 
 const Sidebar = ({isOpen, toggle}) => {
@@ -20,7 +20,7 @@ const Sidebar = ({isOpen, toggle}) => {
             <Icon onClick = {toggle}>
            
                        
-                       <img src={Logo} height="150px" width="150px" alt="Logo" />
+                       <img src={Logo} height="65px" width="150px" alt="Logo" className="sidebarlogo" />
                      
                      
                 <CloseIcon/>

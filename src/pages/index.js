@@ -11,6 +11,7 @@ import Impact from '../components/Impact';
 import Team from '../components/Team';
 import Sponsors from "../components/Sponsors/index"
 import Contact from '../components/Contact';
+import TerpenesSection from '../components/Terpenes';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -25,8 +26,9 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <HeroSection />
+            {/* <TerpenesSection /> */}
             <InfoSection {...homeObjOne} />
-            <InfoSection {...homeObjTwo} />
+            <TerpenesSection />
             <InfoSection {...homeObjThree} />
             <Services />
             <Product />
