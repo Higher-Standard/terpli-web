@@ -6,7 +6,7 @@ import TreeView from '@material-ui/lab/TreeView';
 import TreeItem from '@material-ui/lab/TreeItem';
 import Collapse from '@material-ui/core/Collapse';
 import { useSpring, animated } from 'react-spring/web.cjs'; // web.cjs is required for IE 11 support
-import Container from "@material-ui/core/container"
+import Container from "@material-ui/core/Container"
 function MinusSquare(props) {
   return (
     <SvgIcon fontSize="inhreit" style={{ width: 14, height: 14 }} {...props}>
