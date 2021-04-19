@@ -75,7 +75,7 @@ export default function Entourage() {
             All elements come together to form a Euphony of reacreational and medical effects.
           </DialogContentText>
           <DialogContentText className="popup">
-           This synergistic relationhship is called The Entourage Effect.
+           This synergistic relationship is called The Entourage Effect.
           </DialogContentText>
         </DialogContent>
         <DialogActions  className="popup">
