@@ -55,7 +55,7 @@ export class Form extends Component {
                 if (res.data.errors) {
                     alert(JSON.stringify(res.data.errors[0].message))
                 } else {
-                    alert('Your email has been put on the early access list, Thank You!')
+                    alert('Thank You for contacting Terpli!')
                 }
             })
             .catch(err => {

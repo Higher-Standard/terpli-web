@@ -16,6 +16,9 @@ import Container from '@material-ui/core/Container';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import axios from "axios"
+import Select from '@material-ui/core/Select';
+import InputLabel from '@material-ui/core/InputLabel';
+
 
 function Copyright() {
   return (
@@ -47,8 +50,18 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2),
+  },
 }));
 export default function SignUp() {
+  const [age, setAge] = React.useState('');
+
+
   const classes = useStyles();
   const [investorInfo, setInvestorInfo] = useState({ name: '', email: '', message: '' })
   const [anchorEl, setAnchorEl] = useState(null);
@@ -56,6 +69,7 @@ export default function SignUp() {
   const handleChange = (e) => {
     setInvestorInfo({ ...investorInfo, [e.target.name]: e.target.value })
     console.log(investorInfo)
+    setAge(e.target.value);
   }
   const handleSubmit = (e) => {
     axios({
@@ -74,7 +88,7 @@ export default function SignUp() {
         if (res.data.errors) {
           alert(JSON.stringify(res.data.errors[0].message))
         } else {
-          alert('Your email has been put on the early access list, Thank You!')
+          alert('Thank you for your interest in Terpli!')
         }
       })
       .catch(err => {
@@ -130,24 +144,23 @@ export default function SignUp() {
               />
             </Grid>
             <Grid item xs={12}>
-              <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+              {/* <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                 Select Category
-</Button>
-              <Menu
-                fullWidth
-                id="simple-menu"
-                anchorEl={anchorEl}
-                keepMounted
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={handleClose}>Investor</MenuItem>
-                <MenuItem onClick={handleClose}>Cultivator</MenuItem>
-                <MenuItem onClick={handleClose}>Manufacturer</MenuItem>
-                <MenuItem onClick={handleClose}>Retailer</MenuItem>
-                <MenuItem onClick={handleClose}>Researcher</MenuItem>
-                <MenuItem onClick={handleClose}>Other</MenuItem>
-              </Menu>
+</Button> */}
+               <InputLabel id="demo-simple-select-label">Select a Category</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={age}
+          onChange={handleChange}
+        >
+          <MenuItem value={10}>Investor</MenuItem>
+          <MenuItem value={20}>Cultivator</MenuItem>
+          <MenuItem value={30}>Manufacturer</MenuItem>
+          <MenuItem value={10}>Retailer</MenuItem>
+          <MenuItem value={20}>Researcher</MenuItem>
+          <MenuItem value={30}>Other</MenuItem>
+        </Select>
             </Grid>
             <Grid item xs={12}>
               <form className={classes.root} noValidate autoComplete="off">
