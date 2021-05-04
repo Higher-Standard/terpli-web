@@ -157,9 +157,9 @@ export default function SignUp() {
           <MenuItem value={10}>Investor</MenuItem>
           <MenuItem value={20}>Cultivator</MenuItem>
           <MenuItem value={30}>Manufacturer</MenuItem>
-          <MenuItem value={10}>Retailer</MenuItem>
-          <MenuItem value={20}>Researcher</MenuItem>
-          <MenuItem value={30}>Other</MenuItem>
+          <MenuItem value={40}>Retailer</MenuItem>
+          <MenuItem value={50}>Researcher</MenuItem>
+          <MenuItem value={60}>Other</MenuItem>
         </Select>
             </Grid>
             <Grid item xs={12}>
