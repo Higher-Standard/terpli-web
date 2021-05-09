@@ -15,7 +15,7 @@ export const data = [
     },
     {
       name: 'Your Best High',
-      description: '⋙ Provide product insights regarding product effects, community reviews, and recommendations for consumers at point of purhcase.',
+      description: '⋙ Provide product insights regarding product effects, community reviews, and recommendations for consumers at point of purchase.',
       css: `url(${two})`,
       height: 500,
     },
