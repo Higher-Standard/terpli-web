@@ -20,10 +20,10 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroH1>Clarifying Cannabis</HeroH1>
                 <HeroP>
-                Delivering Transparency for Cannabis Consumers
+               Find the Right Cannabis for You
                 </HeroP>
                 <HeroP2>
-                Sign up for early access and pre-release updates!
+                Sign up for MVP access and pre-release updates!
                 </HeroP2>
                 <HeroBtnWrapper>
                 <BtnWrap>
