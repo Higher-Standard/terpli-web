@@ -210,17 +210,17 @@ export const BtnWrap = styled.div `
     justify-content: flex-start;    
 `
 export const ImgWrap = styled.div `
-    max-width: 555px;
-    height: 100%;
-    padding-top: 35px;
-    padding-bottom: 35px;
+max-width: 300px;
 
+@media screen and (max-width: 768px) {
+    max-width: 0px;
+    }
 
 `
 
 export const Img = styled.img `
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 0px 0;
     padding-right: 0;
 
 `

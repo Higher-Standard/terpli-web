@@ -28,7 +28,7 @@ const Product = ({
     dark,
     dark2,
 }) => {
-    const Video = "https://ik.imagekit.io/87w1vdmbl9d/websitemp4/Product.mp4"
+    const Video = "https://terpliappassest.s3.us-west-1.amazonaws.com/Website/simulator_screenshot_76EDD78C-7A18-4516-9A35-AD1ED58E38A9.png"
     return (
         <>
         <InfoContainer id="product" >
@@ -56,11 +56,9 @@ const Product = ({
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                        <VideoWrapper>
-                            
-        <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
-        </VideoWrapper>
+                            <Img src={Video} />
                         </ImgWrap>
+        
                     </Column2>
                 </InfoRow>
             </InfoWrapper>
