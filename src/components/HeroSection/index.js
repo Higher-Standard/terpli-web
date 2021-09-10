@@ -18,12 +18,12 @@ const HeroSection = () => {
                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </HeroBg> */}
             <HeroContent>
-                <HeroH1>Clarifying Cannabis</HeroH1>
+                <HeroH1>Weed Smarter.</HeroH1>
                 <HeroP>
-               Find the Right Cannabis for You
+               Available Now on Android and iOS.
                 </HeroP>
                 <HeroP2>
-                Sign up for MVP access and pre-release updates!
+                Sign up now to receive exclusive updates and discounts!
                 </HeroP2>
                 <HeroBtnWrapper>
                 <BtnWrap>
