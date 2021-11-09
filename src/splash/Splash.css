@@ -1,0 +1,219 @@
+.screen_background {
+  width: 100%;
+  height: 720px;
+  background: linear-gradient(rgba(103,73,170,1), rgba(48,26,96,1));
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.top_left_square {
+  width: 374px;
+  height: 191px;
+  background: url("../images/square.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.bottom_left_weed {
+  width: 176px;
+  height: 171px;
+  background: url("../images/weed.png");
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: absolute;
+  top: 563px;
+  left: 0px;
+}
+.bottom_right_weed {
+  width: 176px;
+  height: 171px;
+  background: url("../images/weed.png");
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: absolute;
+  top: 411px;
+  right: -25px;
+}
+.logo_background {
+  width: 181px;
+  height: 181px;
+  opacity: 1;
+  position: absolute;
+  top: 200px;
+  left: 549px;
+  overflow: hidden;
+}
+.logo_background1 {
+  width: 181px;
+  height: 181px;
+  background: url("../images/logo_background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.logo {
+  width: 94px;
+  height: 91px;
+  background: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 245px;
+  left: 593px;
+  overflow: hidden;
+}
+.logo_name {
+  width: 237px;
+  height: 90px;
+  background: url("../images/logo_name.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 78px;
+  left: 521px;
+  overflow: hidden;
+}
+.version_label {
+  width: 348px;
+  position: absolute;
+  color: #fff;
+  top: 414px;
+  left: 465px;
+  font-family: NunitoSans-Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: center;
+}
+.text_green {
+  color: #7BFF77;
+}
+.description {
+  width: 356px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 464px;
+  left: 462px;
+  font-family: NunitoSans-Regular;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+}
+.text_input {
+  width: 327px;
+  height: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 571px;
+  left: 477px;
+  overflow: hidden;
+}
+.text_input1 {
+  width: 327px;
+  height: 50px;
+  background: rgba(248,248,248,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+}
+.text_input2 {
+  width: 222px;
+  color: rgba(107,107,107,1);
+  position: absolute;
+  top: 21px;
+  left: 16px;
+  font-family: NunitoSans-Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+.text_input3 {
+  width: 65px;
+  color: rgba(171,171,171,1);
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  font-family: NunitoSans-Regular;
+  font-size: 8px;
+  opacity: 1;
+  text-align: left;
+}
+.text_input4 {
+  width: 20px;
+  height: 16px;
+  background: url("../images/send.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 17px;
+  left: 287px;
+  overflow: hidden;
+}
+.checkbox_input {
+  width: 273px;
+  height: 16px;
+  opacity: 1;
+  position: absolute;
+  top: 635px;
+  left: 492px;
+  overflow: hidden;
+}
+.checkbox_input1 {
+  width: 249px;
+  color: rgba(192,163,255,1);
+  position: absolute;
+  top: 0px;
+  left: 24px;
+  font-family: NunitoSans-Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.checkbox_input2 {
+  width: 15px;
+  height: 15px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  overflow: hidden;
+}
+.copyrights {
+  width: 220px;
+  color: rgba(206,206,206,1);
+  position: absolute;
+  top: 690px;
+  left: 530px;
+  font-family: NunitoSans-Regular;
+  font-size: 10px;
+  opacity: 0.6000000238418579;
+  text-align: center;
+}
