@@ -22,7 +22,7 @@ function Splash() {
         <div class="text_input4" />
       </div>
       <span class="copyrights">
-        © 2021 - 2022 Terpli, Inc. All Rights Reserved.
+        &copy; 2021 - 2022 Terpli, Inc. All Rights Reserved.
       </span>
       <div class="checkbox_input">
         <span class="checkbox_input1">
@@ -31,7 +31,7 @@ function Splash() {
         <div class="checkbox_input2" />
       </div>
       <span class="description">
-        Personalizing Your Cannabis Experience Using Reviews, Cannabinoids &
+        Personalizing Your Cannabis Experience Using Reviews, Cannabinoids &amp;
         Terpene Data!
       </span>
     </div>
