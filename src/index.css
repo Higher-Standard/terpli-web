@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'NunitoSans-Regular';
-  src: local('NunitoSans-Regular'), url(./fonts/NunitoSans-Regular.ttf) format('truetype');
+  src: local('NunitoSans-Regular'), url(./assets/fonts/NunitoSans-Regular.ttf) format('truetype');
 }
 
 body {

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Splash from './splash/Splash';
 import reportWebVitals from './reportWebVitals';
-import './fonts/NunitoSans-Regular.ttf'; 
+import './assets/fonts/NunitoSans-Regular.ttf'; 
 
 ReactDOM.render(
   <React.StrictMode>

@@ -11,7 +11,7 @@
 .top_left_square {
   width: 374px;
   height: 191px;
-  background: url("../images/square.png");
+  background: url("../assets/images/square.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -24,7 +24,7 @@
 .bottom_left_weed {
   width: 176px;
   height: 171px;
-  background: url("../images/weed.png");
+  background: url("../assets/images/weed.png");
   background-repeat: no-repeat;
   opacity: 1;
   position: absolute;
@@ -34,7 +34,7 @@
 .bottom_right_weed {
   width: 176px;
   height: 171px;
-  background: url("../images/weed.png");
+  background: url("../assets/images/weed.png");
   background-repeat: no-repeat;
   opacity: 1;
   position: absolute;
@@ -53,7 +53,7 @@
 .logo_background1 {
   width: 181px;
   height: 181px;
-  background: url("../images/logo_background.png");
+  background: url("../assets/images/logo_background.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -66,7 +66,7 @@
 .logo {
   width: 94px;
   height: 91px;
-  background: url("../images/logo.png");
+  background: url("../assets/images/logo.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -79,7 +79,7 @@
 .logo_name {
   width: 237px;
   height: 90px;
-  background: url("../images/logo_name.png");
+  background: url("../assets/images/logo_name.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -162,7 +162,7 @@
 .text_input4 {
   width: 20px;
   height: 16px;
-  background: url("../images/send.png");
+  background: url("../assets/images/send.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
