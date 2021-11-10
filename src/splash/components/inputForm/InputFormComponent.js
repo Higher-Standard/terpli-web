@@ -1,4 +1,5 @@
 import React from "react";
+import httpClient from "react-http-client";
 import "./InputFormComponent.scss";
 
 class InputFormComponent extends React.Component {
@@ -23,17 +24,24 @@ class InputFormComponent extends React.Component {
     });
   }
 
-  handleSubmit(event) {
+  async handleSubmit(event) {
     event.preventDefault();
-
-    const payload = {
-      email: this.state.email,
-      beta: this.state.isBeta,
-    };
-
-    console.log("Send ", JSON.stringify(payload));
-
-    this.props.setIsSent(true);
+    try {
+      const response = await httpClient.post(
+        "https://2ayewygezf.execute-api.us-west-1.amazonaws.com/test/new/signup",
+        {
+          email: this.state.email,
+          beta: this.state.isBeta,
+        },
+        {
+          accept: "application/json",
+        }
+      );
+      console.log("Response ", response);
+      this.props.setIsSent(true);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   render() {
