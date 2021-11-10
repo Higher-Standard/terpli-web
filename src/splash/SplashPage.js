@@ -45,7 +45,7 @@ class SplashPage extends React.Component {
               &amp; Terpene Data!
             </span>
           </div>
-          {this.isSent ? (
+          {this.state.isSent ? (
             <EmailSentComponent />
           ) : (
             <InputFormComponent setIsSent={this.setIsSent} />

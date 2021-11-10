@@ -31,9 +31,9 @@ class InputFormComponent extends React.Component {
       beta: this.state.isBeta,
     };
 
-    this.props.setIsSent(true);
-
     console.log("Send ", JSON.stringify(payload));
+
+    this.props.setIsSent(true);
   }
 
   render() {
