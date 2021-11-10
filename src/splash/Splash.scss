@@ -1,96 +1,96 @@
 .container {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 720px;
   background: linear-gradient(#6749aa, #301a60);
-  position: relative;
-  overflow: hidden;
 
   .background_images {
     .top_left_square {
-      width: 374px;
-      height: 191px;
       background: url("../assets/images/square.png");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
       top: 0px;
       left: 0px;
+      width: 374px;
+      height: 191px;
     }
     .bottom_left_weed {
-      width: 176px;
-      height: 171px;
       background: url("../assets/images/weed.png");
       background-repeat: no-repeat;
       background-position: center center;
       background-repeat: no-repeat;
       position: absolute;
-      top: 563px;
+      // top: 563px;
+      top: 549px;
       left: 0px;
-    }
-    .bottom_right_weed {
       width: 176px;
       height: 171px;
+      overflow: hidden;
+    }
+    .bottom_right_weed {
       background: url("../assets/images/weed.png");
       background-repeat: no-repeat;
       background-position: center center;
       background-repeat: no-repeat;
       position: absolute;
       top: 411px;
-      right: -25px;
+      // right: -25px;
+      right: 0px;
+      width: 176px;
+      height: 171px;
+      overflow: hidden;
     }
   }
   .content {
     .content_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .logo_background {
-        width: 181px;
-        height: 181px;
         position: absolute;
         top: 200px;
-        left: 549px;
-      }
-      .logo_background1 {
         width: 181px;
         height: 181px;
+      }
+      .logo_background1 {
         background: url("../assets/images/logo_background.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         position: relative;
-        top: 0px;
-        left: 0px;
+        width: 181px;
+        height: 181px;
       }
       .logo {
-        width: 94px;
-        height: 91px;
         background: url("../assets/images/logo.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         position: absolute;
         top: 245px;
-        left: 593px;
+        width: 94px;
+        height: 91px;
       }
       .logo_name {
-        width: 237px;
-        height: 90px;
         background: url("../assets/images/logo_name.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         position: absolute;
         top: 78px;
-        left: 521px;
+        width: 237px;
+        height: 90px;
       }
     }
     .content_text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .version_label {
-        width: 348px;
         position: absolute;
         color: #fff;
         top: 414px;
-        left: 465px;
+        width: 348px;
         font-size: 22px;
         text-align: center;
       }
@@ -98,87 +98,86 @@
         color: #7bff77;
       }
       .description {
-        width: 356px;
-        color: #fff;
         position: absolute;
         top: 464px;
-        left: 462px;
+        width: 356px;
         font-size: 18px;
+        color: #fff;
         text-align: center;
       }
     }
     .content_input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .text_input {
+        position: relative;
+        top: 360px;
         width: 327px;
         height: 50px;
-        position: absolute;
-        top: 571px;
-        left: 477px;
       }
       .text_input1 {
-        width: 327px;
-        height: 50px;
         background: #fff;
-        position: absolute;
-        top: 0px;
-        left: 0px;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
+        width: 327px;
+        height: 50px;
       }
       .text_input2 {
-        width: 222px;
-        color: #6b6b6b;
         position: absolute;
-        top: 21px;
-        left: 16px;
+        top: 25px;
+        left: 13px;
+        width: 270px;
         font-size: 14px;
         text-align: left;
+        color: #6b6b6b;
+        border: none;
+        outline: none;
       }
       .text_input3 {
-        width: 65px;
-        color: #ababab;
         position: absolute;
         top: 11px;
         left: 16px;
+        width: 65px;
         font-size: 8px;
         text-align: left;
+        color: #ababab;
       }
       .text_input4 {
-        width: 20px;
-        height: 16px;
         background: url("../assets/images/send.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         position: absolute;
         top: 17px;
-        left: 287px;
+        right: 10px;
+        width: 20px;
+        height: 16px;
       }
       .checkbox_input {
-        width: 273px;
-        height: 16px;
         position: absolute;
         top: 635px;
-        left: 492px;
+        width: 273px;
+        height: 16px;
       }
       .checkbox_input1 {
-        width: 249px;
-        color: #c0a4ff;
         position: absolute;
         top: 0px;
-        left: 24px;
+        left: 49px;
+        width: 249px;
         font-size: 12px;
         text-align: center;
+        color: #c0a4ff;
       }
       .checkbox_input2 {
-        width: 15px;
-        height: 15px;
         background: #fff;
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: -3px;
+        left: 25px;
+        width: 15px;
+        height: 15px;
         border-top-left-radius: 2px;
         border-top-right-radius: 2px;
         border-bottom-left-radius: 2px;
@@ -186,14 +185,16 @@
       }
     }
     .content_footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .copyrights {
-        width: 220px;
-        color: #cecece;
         position: absolute;
         top: 690px;
-        left: 530px;
+        width: 220px;
         font-size: 10px;
         text-align: center;
+        color: #cecece;
         opacity: 0.6;
       }
     }
