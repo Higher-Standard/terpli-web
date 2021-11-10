@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Splash from './splash/Splash';
+import SplashPage from './splash/SplashPage';
 import reportWebVitals from './reportWebVitals';
 import './assets/fonts/NunitoSans-Regular.ttf'; 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Splash />
+    <SplashPage />
   </React.StrictMode>,
   document.getElementById('root')
 );
