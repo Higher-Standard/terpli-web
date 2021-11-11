@@ -1,5 +1,5 @@
+import axios from "axios";
 import React from "react";
-import httpClient from "react-http-client";
 import "./InputFormComponent.scss";
 
 class InputFormComponent extends React.Component {
@@ -27,20 +27,25 @@ class InputFormComponent extends React.Component {
   async handleSubmit(event) {
     event.preventDefault();
     try {
-      const response = await httpClient.post(
-        "https://2ayewygezf.execute-api.us-west-1.amazonaws.com/test/new/signup",
-        {
+      const baseUrl = "https://2ayewygezf.execute-api.us-west-1.amazonaws.com/";
+      const config = {
+        method: "POST",
+        url: `${baseUrl}/test/new/signup`,
+        data: {
           email: this.state.email,
           beta: this.state.isBeta,
         },
-        {
-          accept: "application/json",
-        }
-      );
-      console.log("Response ", response);
-      this.props.setIsSent(true);
+        headers: {
+          "Cache-Control": "no-cache",
+          "Content-Type": "application/json",
+        },
+      };
+      const response = await axios(config);
+      this.props.setResponseStatus(response.statusText);
     } catch (error) {
-      console.error(error);
+      this.props.setResponseStatus(error.response?.statusText || "500");
+    } finally {
+      this.props.setIsSubmitted(true);
     }
   }
 

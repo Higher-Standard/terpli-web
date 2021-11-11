@@ -1,22 +1,27 @@
 import React from "react";
-import EmailSentComponent from "./components/emailSent/EmailSentComponent";
 import InputFormComponent from "./components/inputForm/InputFormComponent";
+import SubmittedFormComponent from "./components/submittedForm/SubmittedFormComponent";
 import "./SplashPage.scss";
 
 class SplashPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isSent: false };
+    this.state = { isSubmitted: false, responseStatus: "" };
 
-    this.setIsSent = this.setIsSent.bind(this);
+    this.setIsSubmitted = this.setIsSubmitted.bind(this);
+    this.setResponseStatus = this.setResponseStatus.bind(this);
   }
 
-  setIsSent(value) {
+  setIsSubmitted(value) {
     this.setState({
-      isSent: value,
+      isSubmitted: value,
     });
+  }
 
-    console.log("IsSent ", value);
+  setResponseStatus(value) {
+    this.setState({
+      responseStatus: value,
+    });
   }
 
   render() {
@@ -45,10 +50,15 @@ class SplashPage extends React.Component {
               &amp; Terpene Data!
             </span>
           </div>
-          {this.state.isSent ? (
-            <EmailSentComponent />
+          {this.state.isSubmitted ? (
+            <SubmittedFormComponent
+              responseStatus={this.state.responseStatus}
+            />
           ) : (
-            <InputFormComponent setIsSent={this.setIsSent} />
+            <InputFormComponent
+              setIsSubmitted={this.setIsSubmitted}
+              setResponseStatus={this.setResponseStatus}
+            />
           )}
           <div className="copyrights_container">
             <span className="copyrights_label">
